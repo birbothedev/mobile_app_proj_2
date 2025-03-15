@@ -1,20 +1,9 @@
 package com.example.project2
 
-class Capital(state: String, capitalCity: String) {
-    var state : String = ""
-        get() = field
-        set(value) {
-            field = value
-        }
+data class Capital(var state: String) {
 
-    var capitalCity : String = ""
-        get() = field
-        set(value) {
-            field = value
-        }
+    var capitalCity: String = ""
 
-    init {
-        this.state = state
-        this.capitalCity = capitalCity
-    }
+
+
 }

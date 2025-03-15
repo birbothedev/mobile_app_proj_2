@@ -1,8 +1,6 @@
 package com.example.project2
 
-import android.graphics.Paint.Cap
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +11,7 @@ import kotlin.random.Random
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var stateList: ArrayList<Capital>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,30 +27,28 @@ class MainActivity : AppCompatActivity() {
 
         val rawDataArray = resources.getStringArray(R.array.states)
         var stateName : String
-        var capitalName : String
         var stringArray : List<String>
         var capital : Capital
-        stateList = ArrayList<Capital>()
 
         for (state in rawDataArray){
             stringArray = state.split(",")
             stateName = stringArray[0]
-            capitalName = stringArray[1]
-            capital = Capital(stateName, capitalName)
+            capital = Capital(stateName)
+            capital.capitalCity = stringArray[1]
             stateList.add(capital)
         }
 
-        var capitalObject = stateList.get(Random.nextInt(stateList.size))
-        var messageString = "${capitalObject.capitalCity} " +
-                "is the capital of ${capitalObject.state}"
-        binding.capitalInfo.setText(messageString)
-
         binding.nextButton.setOnClickListener {
-            capitalObject = stateList.get(Random.nextInt(stateList.size))
-            messageString = "${capitalObject.capitalCity} " +
-                    "is the capital of ${capitalObject.state}"
-            binding.capitalInfo.setText(messageString)
+            showStateInfo()
         }
-
     }
+}
+
+fun showStateInfo(){
+    val stateList = ArrayList<Capital>()
+
+    val capitalObject = stateList[Random.nextInt(stateList.size)]
+    val messageString = "${capitalObject.capitalCity} " +
+            "is the capital of ${capitalObject.state}"
+    binding.capitalInfo.text = messageString
 }
