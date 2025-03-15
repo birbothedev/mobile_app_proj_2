@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">Project 2</string>
+    <string-array name="states">
+        <item>Alabama,Montgomery</item>
+        <item>Alaska,Juneau</item>
+        <item>Arizona,Phoenix</item>
+        <item>Arkansas,Little Rock</item>
+        <item>California,Sacramento</item>
+        <item>Colorado,Denver</item>
+        <item>Connecticut,Hartford</item>
+        <item>Delaware,Dover</item>
+        <item>Hawaii,Honolulu</item>
+        <item>Florida,Tallahassee</item>
+        <item>Georgia,Atlanta</item>
+        <item>Idaho,Boise</item>
+        <item>Illinois,Springfield</item>
+        <item>Indiana,Indianapolis</item>
+        <item>Iowa,Des Moines</item>
+        <item>Kansas,Topeka</item>
+        <item>Kentucky,Frankfort</item>
+        <item>Louisiana,Baton Rouge</item>
+        <item>Maine,Augusta</item>
+        <item>Maryland,Annapolis</item>
+        <item>Massachusetts,Boston</item>
+        <item>Michigan,Lansing</item>
+        <item>Minnesota,St. Paul</item>
+        <item>Mississippi,Jackson</item>
+        <item>Missouri,Jefferson City</item>
+        <item>Montana,Helena</item>
+        <item>Nebraska,Lincoln</item>
+        <item>Nevada,Carson City</item>
+        <item>New Hampshire,Concord</item>
+        <item>New Jersey,Trenton</item>
+        <item>New Mexico,Santa Fe</item>
+        <item>North Carolina,Raleigh</item>
+        <item>North Dakota,Bismarck</item>
+        <item>New York,Albany</item>
+        <item>Ohio,Columbus</item>
+        <item>Oklahoma,Oklahoma City</item>
+        <item>Oregon,Salem</item>
+        <item>Pennsylvania,Harrisburg</item>
+        <item>Rhode Island,Providence</item>
+        <item>South Carolina,Columbia</item>
+        <item>South Dakota,Pierre</item>
+        <item>Tennessee,Nashville</item>
+        <item>Texas,Austin</item>
+        <item>Utah,Salt Lake City</item>
+        <item>Vermont,Montpelier</item>
+        <item>Virginia,Richmond</item>
+        <item>Washington,Olympia</item>
+        <item>West Virginia,Charleston</item>
+        <item>Wisconsin,Madison</item>
+        <item>Wyoming,Cheyenne</item>
+    </string-array>
 </resources>
