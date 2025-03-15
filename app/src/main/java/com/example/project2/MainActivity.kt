@@ -10,8 +10,7 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var stateList: ArrayList<Capital>
-
+    private var stateList = ArrayList<Capital>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,17 +37,17 @@ class MainActivity : AppCompatActivity() {
             stateList.add(capital)
         }
 
+        showStateInfo()
+
         binding.nextButton.setOnClickListener {
             showStateInfo()
         }
     }
-}
 
-fun showStateInfo(){
-    val stateList = ArrayList<Capital>()
-
-    val capitalObject = stateList[Random.nextInt(stateList.size)]
-    val messageString = "${capitalObject.capitalCity} " +
-            "is the capital of ${capitalObject.state}"
-    binding.capitalInfo.text = messageString
+    private fun showStateInfo(){
+        val capitalObject = stateList[Random.nextInt(stateList.size)]
+        val messageString = "${capitalObject.capitalCity} " +
+                "is the capital of ${capitalObject.state}"
+        binding.capitalInfo.text = messageString
+    }
 }
