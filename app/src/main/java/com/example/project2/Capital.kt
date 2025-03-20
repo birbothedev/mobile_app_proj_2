@@ -1,9 +1,5 @@
 package com.example.project2
 
-data class Capital(var state: String) {
-
-    var capitalCity: String = ""
-
-
+data class Capital(val state: String, val capitalCity: String) {
 
 }

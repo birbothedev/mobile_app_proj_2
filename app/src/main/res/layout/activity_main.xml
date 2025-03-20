@@ -8,17 +8,17 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/capital_info"
+        android:id="@+id/capitalInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/next_button"
+        android:id="@+id/nextButton"
         android:text="Get Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
